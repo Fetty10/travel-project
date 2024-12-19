@@ -116,7 +116,7 @@ section.secondary {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -130,9 +130,18 @@ section.secondary {
 .grid-3-column {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
 .card {
   background: #fff;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  gap: 0;
 }
 
 .card-body {
@@ -221,5 +230,11 @@ footer a {
   }
   section {
     padding: 30px 0;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
