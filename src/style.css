@@ -10,7 +10,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/aso-rock.jpeg);
+    url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -56,12 +56,57 @@ header a {
 }
 .grid {
   display: grid;
+  gap: 64px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px;
+}
+
+main {
+  background-color: #fff;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
 
 footer {
@@ -69,7 +114,7 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url(../images/footer.jpeg);
+    url(../images/footer.png);
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,5 +164,13 @@ footer a {
   header a {
     font-size: 12px;
     padding: 14px 28px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  section {
+    padding: 30px 0;
   }
 }
